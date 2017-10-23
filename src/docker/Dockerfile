@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM node:8.7-alpine
 MAINTAINER Abner G Jacobsen - http://daspanel.com <admin@daspanel.com>
 
 # Parse Daspanel common arguments for the build command.
@@ -36,6 +36,21 @@ RUN set -x \
 
     # Install minimal packages
     && apk add --update --no-cache ca-certificates wget tzdata unzip libcap curl tar bash git \
+        build-base  \
+        autoconf file g++ gcc make linux-headers libtool pcre-dev \
+        binutils isl libatomic libc-dev musl-dev re2c libstdc++ libgcc \
+        binutils-libs mpc1 mpfr3 gmp libgomp coreutils freetype-dev \
+        libjpeg-turbo-dev libltdl libmcrypt-dev libpng-dev imap-dev openssl-dev \
+        yaml-dev shadow python automake nasm \
+
+    # Install webpack, gulp globally
+    && npm install webpack -g \
+    && npm install gulp-cli -g \
+    && npm install bower -g \
+    && npm install node-gyp -g \
+
+    # Remove user coming from the node image wich id 1000 can conflict when daspanel user is created
+    && deluser node \
 
     # Cleanup
     && rm -rf /tmp/* \
