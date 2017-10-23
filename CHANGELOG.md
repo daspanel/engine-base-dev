@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 0.1.1 (2017-10-23)
+
+### Other
+
+* Install development tools. [Abner G Jacobsen]
+
+
 ## 0.1.0 (2017-10-23)
 
 ### Other
