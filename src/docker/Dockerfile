@@ -56,5 +56,10 @@ RUN set -x \
     && rm -rf /tmp/* \
     && rm -rf /var/cache/apk/*
 
+# https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#non-root-user
+ENV NPM_CONFIG_PREFIX=/home/daspanel/.npm-global
+
+# set path in a way that local and global npm-modules (e.g. ng-cli, vue) can be called like executables
+ENV PATH="./node_modules/.bin:/home/daspanel/.npm-global/bin:${PATH}"
 
 
