@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 0.3.0 (2017-11-13)
+
+### Other
+
+* Added pip package. [Abner G Jacobsen]
+
+
 ## 0.2.0 (2017-11-04)
 
 ### Other
