@@ -41,7 +41,13 @@ RUN set -x \
         binutils isl libatomic libc-dev musl-dev re2c libstdc++ libgcc \
         binutils-libs mpc1 mpfr3 gmp libgomp coreutils freetype-dev \
         libjpeg-turbo-dev libltdl libmcrypt-dev libpng-dev imap-dev openssl-dev \
-        yaml-dev shadow python automake nasm \
+        yaml-dev shadow libssl1.0 libcurl python2 automake nasm \
+
+    # Install pip
+    && python -m ensurepip \
+    && rm -r /usr/lib/python*/ensurepip \
+    && curl "https://bootstrap.pypa.io/get-pip.py" | python \
+    && pip install --no-cache-dir --upgrade pip setuptools \
 
     # Install webpack, gulp globally
     && npm install webpack -g \
