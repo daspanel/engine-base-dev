@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 0.4.0 (2017-11-24)
+
+### Other
+
+* Added lftp package. [Abner G Jacobsen]
+
+
 ## 0.3.0 (2017-11-13)
 
 ### Other
