@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 0.5.0 (2018-01-05)
+
+### Other
+
+* Added python3, pipenv and ENV varialve SHELL. [Abner G Jacobsen]
+
+
 ## 0.4.0 (2017-11-24)
 
 ### Other
