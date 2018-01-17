@@ -42,18 +42,13 @@ RUN set -x \
         binutils isl libatomic libc-dev musl-dev re2c libstdc++ libgcc \
         binutils-libs mpc1 mpfr3 gmp libgomp coreutils freetype-dev \
         libjpeg-turbo-dev libltdl libmcrypt-dev libpng-dev imap-dev openssl-dev \
-        yaml-dev shadow libssl1.0 libcurl python2 automake nasm lftp python3 \
+        yaml-dev shadow libssl1.0 libcurl python2 automake nasm lftp \
 
     # Install pip
     && python -m ensurepip \
-    && python3 -m ensurepip \
     && rm -r /usr/lib/python*/ensurepip \
     && curl "https://bootstrap.pypa.io/get-pip.py" | python \
     && pip install --no-cache-dir --upgrade pip setuptools \
-    && pip3 install --no-cache-dir --upgrade pip setuptools \
-
-    # Install pipenv
-    && pip3 install pipenv \
 
     # Install webpack, gulp globally
     && npm install webpack -g \
