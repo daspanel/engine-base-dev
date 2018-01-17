@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 0.5.1 (2018-01-17)
+
+### Other
+
+* Removed python3, pipenv and ENV varialve SHELL. [Abner G Jacobsen]
+
+
 ## 0.5.0 (2018-01-05)
 
 ### Other
