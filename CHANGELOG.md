@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 0.5.2 (2018-01-17)
+
+### Other
+
+* Removed conflicting package openssl-dev. [Abner G Jacobsen]
+
+
 ## 0.5.1 (2018-01-17)
 
 ### Other
