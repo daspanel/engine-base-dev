@@ -41,7 +41,7 @@ RUN set -x \
         autoconf file g++ gcc make linux-headers libtool pcre-dev \
         binutils isl libatomic libc-dev musl-dev re2c libstdc++ libgcc \
         binutils-libs mpc1 mpfr3 gmp libgomp coreutils freetype-dev \
-        libjpeg-turbo-dev libltdl libmcrypt-dev libpng-dev imap-dev openssl-dev \
+        libjpeg-turbo-dev libltdl libmcrypt-dev libpng-dev imap-dev \
         yaml-dev shadow libssl1.0 libcurl python2 automake nasm lftp \
 
     # Install pip
